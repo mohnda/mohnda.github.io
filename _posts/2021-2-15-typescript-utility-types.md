@@ -56,9 +56,7 @@ let simpleDailyTodo: Partial<Todo> = {
 console.log(`${simpleDailyTodo.title}, ${simpleDailyTodo.completed}, ${simpleDailyTodo.description}`);
 ```
 
-By using the `Partial<Type>` you don't have to change the properties of the original type.
-
-Under the hood, all it does it as follows:
+By using the `Partial<Type>` you don't have to change the properties of the original type. Under the hood, its implementation looks like the following:
 
 ```
 // for each key (property) in the Type T, make the property optional and make the Type same as the original (T[K])
