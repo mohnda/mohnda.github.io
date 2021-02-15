@@ -21,7 +21,7 @@ type Todo = {
 }
 ```
 
-Using the above `Todo`, you can now create a new `Todo` object.
+Using the above `Todo`, you can now create a new `Todo` object:
 ```typescript
 let dailyTodo: Todo = {
   title: "Go for a run",
@@ -58,7 +58,7 @@ console.log(`${simpleDailyTodo.title}, ${simpleDailyTodo.completed}, ${simpleDai
 
 By using the `Partial<Type>` you don't have to change the properties of the original type. Under the hood, its implementation looks like the following:
 
-```
+```typescript
 // for each key (property) in the Type T, make the property optional and make the Type same as the original (T[K])
 type Partial<T> = {
     [K in keyof T]? : T[K]
