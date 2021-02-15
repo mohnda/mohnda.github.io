@@ -1,18 +1,14 @@
 ---
 layout: post
-title:  "Generic Utility Types in Typescript!"
+title:  "Partial Utility Type in Typescript!"
 ---
 
-# Typescript Utility Types
+# Partial Utility Type
 
-Typescript has several utility types that ease frequent type transformations. In this blog post, I will explain:
+Typescript has several utility types that make type transformations easier. In this blog post, I will describe the **Partial<Type>**:
 * What it is.
-* An example what you could do without using a utility types.
-* An example the same thing as above, but using utility types.
-
-I hope you find it useful!
-
-## `Partial<Type>`
+* An example of how to achieve what it does without using it.
+* An example the same thing as above, using the Partial type.
 
 **What:** It is a generic utility type that takes a given Type and returns a new Type that represents all subsets of the original Type, but with all properties set to optional.
 
